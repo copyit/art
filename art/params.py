@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """Art parameters."""
-from .text_dic1 import *
-from .text_dic2 import *
-from .text_dic3 import *
-from .decor_dic import *
-from .art_dic import *
+from .data.fonts1 import *
+from .data.fonts2 import *
+from .data.fonts3 import *
+from .data.arts import *
+from .data.decorations import *
 
-ART_VERSION = "5.3"  # pragma: no cover
+ART_VERSION = "6.4"  # pragma: no cover
 FONT_SMALL_THRESHOLD = 50  # pragma: no cover
 FONT_MEDIUM_THRESHOLD = 100  # pragma: no cover
 FONT_LARGE_THRESHOLD = 200  # pragma: no cover
@@ -26,9 +26,35 @@ FILE_TYPE_ERROR = "The 'filename' type must be str."
 PRINT_STATUS_TYPE_ERROR = "The 'print_status' type must be bool."
 OVERWRITE_TYPE_ERROR = "The 'overwrite' type must be bool."
 SEP_TYPE_ERROR = "The 'sep' type must be str."
-ART_ENVIRONMENT_WARNING = "[Warning] '{0}' is not printable in this environment."
-FONT_ENVIRONMENT_WARNING = "[Warning] '{0}' is not printable in this environment."
+SPACE_TYPE_ERROR = "The 'space' type must be int."
+DETAILED_RETURN_TYPE_ERROR = "The '__detailed_return' type must be bool."
+ART_ENVIRONMENT_WARNING = "[Warning] '{0}' art is not printable in this environment."
+FONT_ENVIRONMENT_WARNING = "[Warning] '{0}' font is not printable in this environment."
+FONT_OR_DECOR_ENVIRONMENT_WARNING = "[Warning] '{0}' font or '{1}' decoration is not printable in this environment."
 PACKAGE_LOAD_WARNING = "[Warning] There is a problem loading the package 'coverage'."
+LINE_LENGTH_ERROR = "The 'length' must be an int higher than 0."
+LINE_HEIGHT_ERROR = "The 'height' must be an int higher than 0."
+CHAR_TYPE_ERROR = "The 'char' type must be str."
+
+CLI_HELP = """
+Webpage : https://www.ascii-art.site
+
+Help :
+
+\t- list --> (list of arts)
+
+\t- fonts --> (list of fonts)
+
+\t- test --> (run tests)
+
+\t- text [yourtext] [font(optional)] --> (text art) Example : 'art text exampletext block'
+
+\t- shape [shapename] --> (shape art) Example : 'art shape butterfly'
+
+\t- save [yourtext] [font(optional)]  -->  Example : 'art save exampletext block'
+
+\t- all [yourtext]  -->  Example : 'art all exampletext'
+"""
 
 SMALL_WIZARD_FONT = [
     "contessa",
@@ -783,6 +809,24 @@ NON_ASCII_FONTS = [
     "fancy127",
     "fancy128",
     "fancy129",
+    "fancy131",
+    "fancy132",
+    "fancy133",
+    "fancy134",
+    "fancy135",
+    "fancy136",
+    "fancy137",
+    "fancy138",
+    "fancy139",
+    "fancy140",
+    "fancy141",
+    "fancy142",
+    "fancy143",
+    "fancy144",
+    "fancy145",
+    "fancy146",
+    "fancy147",
+    "fancy148",
     "foxy",
     "white_square",
     "black_square",
@@ -832,6 +876,7 @@ NON_ASCII_FONTS = [
     "fasion",
     "curly",
     "russian",
+    "russian2",
     "messletters",
     "coptic1",
     "swirly",
@@ -866,7 +911,56 @@ NON_ASCII_FONTS = [
     "manga",
     "upside_down2",
     "cool",
-    "instagram"]
+    "instagram",
+    "tarty1",
+    "tarty2",
+    "tarty3",
+    "tarty4",
+    "tarty5",
+    "tarty6",
+    "tarty7",
+    "tarty8",
+    "tarty9",
+    "got",
+    "vip",
+    "crazy1",
+    "crazy2",
+    "crazy3",
+    "cruse",
+    "drippy",
+    "stylish",
+    "ayda",
+    "small_fancy",
+    "boom",
+    "cross_jesus",
+    "dark_tattoo",
+    "lucifer",
+    "ascii_roman",
+    "squiggle1",
+    "squiggle2",
+    "vaporwave",
+    "emoji",
+    "alissa",
+    "milka",
+    "ozana",
+    "shanna",
+    "livia",
+    "lolie",
+    "zakia",
+    "batman",
+    "lord_of_the_ring",
+    "kesia",
+    "akila",
+    "laurine",
+    "bianca",
+    "callian",
+    "awa",
+    "neva",
+    "smila",
+    "clay",
+    "orinda",
+    "abby"
+]
 
 RANDOM_FILTERED_FONTS = [
     '5x8',
@@ -886,6 +980,17 @@ RANDOM_FILTERED_FONTS = [
     'flyn_sh',
     'moscow',
     'dwhistled'] + NON_ASCII_FONTS
+
+MIX_FILTERED_FONTS = [
+    "tarty1",
+    "tarty2",
+    "tarty3",
+    "tarty4",
+    "tarty5",
+    "tarty6",
+    "tarty7",
+    "tarty8",
+    "tarty9"]
 
 DESCRIPTION = '''ASCII art is also known as "computer text art".
 It involves the smart placement of typed special characters or
@@ -1387,6 +1492,7 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "fasion": [fasion_dic, False],
             "curly": [curly_dic, False],
             "russian": [russian_dic, False],
+            "russian2": [russian2_dic, False],
             "messletters": [messletters_dic, False],
             "coptic1": [coptic1_dic, False],
             "swirly": [swirly_dic, False],
@@ -1444,7 +1550,73 @@ FONT_MAP = {"block": [block_dic, True], "banner": [banner_dic, False],  # pragma
             "manga": [manga_dic, False],
             "upside_down2": [upside_down2_dic, False],
             "cool": [cool_dic, False],
-            "instagram":[instagram_dic, False]
+            "instagram": [instagram_dic, False],
+            "fancy131": [fancy131_dic, False],
+            "fancy132": [fancy132_dic, False],
+            "fancy133": [fancy133_dic, False],
+            "fancy134": [fancy134_dic, False],
+            "fancy135": [fancy135_dic, False],
+            "fancy136": [fancy136_dic, False],
+            "fancy137": [fancy137_dic, False],
+            "fancy138": [fancy138_dic, False],
+            "fancy139": [fancy139_dic, False],
+            "fancy140": [fancy140_dic, False],
+            "fancy141": [fancy141_dic, False],
+            "fancy142": [fancy142_dic, False],
+            "fancy143": [fancy143_dic, False],
+            "fancy144": [fancy144_dic, False],
+            "fancy145": [fancy145_dic, False],
+            "fancy146": [fancy146_dic, False],
+            "fancy147": [fancy147_dic, False],
+            "fancy148": [fancy148_dic, False],
+            "tarty1": [tarty1_dic, False],
+            "tarty2": [tarty2_dic, False],
+            "tarty3": [tarty3_dic, False],
+            "tarty4": [tarty4_dic, False],
+            "tarty5": [tarty5_dic, False],
+            "tarty6": [tarty6_dic, False],
+            "tarty7": [tarty7_dic, False],
+            "tarty8": [tarty8_dic, False],
+            "tarty9": [tarty9_dic, False],
+            "got": [got_dic, False],
+            "vip": [vip_dic, False],
+            "crazy1": [crazy1_dic, False],
+            "crazy2": [crazy2_dic, False],
+            "crazy3": [crazy3_dic, False],
+            "cruse": [cruse_dic, False],
+            "drippy": [drippy_dic, False],
+            "stylish": [stylish_dic, False],
+            "ayda": [ayda_dic, False],
+            "small_fancy": [small_fancy_dic, False],
+            "boom": [boom_dic, False],
+            "cross_jesus": [cross_jesus_dic, False],
+            "dark_tattoo": [dark_tattoo_dic, False],
+            "lucifer": [lucifer_dic, False],
+            "ascii_roman": [ascii_roman_dic, False],
+            "squiggle1": [squiggle1_dic, False],
+            "squiggle2": [squiggle2_dic, False],
+            "vaporwave": [vaporwave_dic, False],
+            "emoji": [emoji_dic, False],
+            "alissa": [alissa_dic, False],
+            "milka": [milka_dic, False],
+            "ozana": [ozana_dic, False],
+            "shanna": [shanna_dic, False],
+            "livia": [livia_dic, False],
+            "lolie": [lolie_dic, False],
+            "zakia": [zakia_dic, False],
+            "batman": [batman_dic, False],
+            "lord_of_the_ring": [lord_of_the_ring_dic, False],
+            "kesia": [kesia_dic, False],
+            "akila": [akila_dic, False],
+            "laurine": [laurine_dic, False],
+            "bianca": [bianca_dic, False],
+            "callian": [callian_dic, False],
+            "awa": [awa_dic, False],
+            "neva": [neva_dic, False],
+            "smila": [smila_dic, False],
+            "clay": [clay_dic, False],
+            "orinda": [orinda_dic, False],
+            "abby": [abby_dic, False]
             }
 
 DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
@@ -1666,9 +1838,11 @@ DECORATIONS_MAP = {"angry1": angry1,  # pragma: no cover
                    "wave8": wave8,
                    "wave9": wave9}
 
-FONT_NAMES = sorted(list(FONT_MAP.keys()))  # pragma: no cover
-DECORATION_NAMES = sorted(list(DECORATIONS_MAP.keys()))  # pragma: no cover
-ART_NAMES = sorted(list(art_dic.keys()))  # pragma: no cover
+FONT_NAMES = sorted(FONT_MAP)  # pragma: no cover
+ASCII_FONTS = sorted(set(FONT_NAMES) - set(NON_ASCII_FONTS))
+DECORATION_NAMES = sorted(DECORATIONS_MAP)  # pragma: no cover
+ART_NAMES = sorted(art_dic)  # pragma: no cover
+ASCII_ARTS = sorted(set(ART_NAMES) - set(NON_ASCII_ARTS))
 FONT_COUNTER = len(FONT_NAMES)  # pragma: no cover
 ART_COUNTER = len(ART_NAMES)  # pragma: no cover
 DECORATION_COUNTER = len(DECORATION_NAMES)  # pragma: no cover

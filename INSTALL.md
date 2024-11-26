@@ -1,29 +1,30 @@
-## Installation	
+## Installation
+
+⚠️ **ART 6.1** is the last version to support **Python 3.5** officially	
 
 ⚠️ **ART 4.4** is the last version to support **Python 2.7** & **Python 3.4** officially		
 
 ⚠️ **PyPI** support of these versions will be removed in a **future release**
 
-### Source code
-- Download [Version 5.3](https://github.com/sepandhaghighi/art/archive/v5.3.zip) or [Latest Source ](https://github.com/sepandhaghighi/art/archive/dev.zip)
-- `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
 
-
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install art==5.3` or `pip3 install art==5.3` (Need root access)
+- `pip install art==6.4`
 
-* Note :  On `--upgrade` error install latest version of `setuptools` : `pip install setuptools` and retry
+### Source code
+- Download [Version 6.4](https://github.com/sepandhaghighi/art/archive/v6.4.zip) or [Latest Source](https://github.com/sepandhaghighi/art/archive/dev.zip)
+- `pip install .`
 
 ### Conda
 
+#### Conda-Forge
+- Check [Conda-Forge](https://conda-forge.org)
+- `conda install -c conda-forge ascii-art `
+
+#### Private channel
 - Check [Conda Managing Package](https://conda.io)
-- `conda install -c sepandhaghighi art ` (Need root access)
-
-### Easy install
-
-- Run `easy_install "art==5.3"` (Need root access)
+- `conda install -c sepandhaghighi art `
 
 ### MATLAB
 
@@ -31,7 +32,7 @@
 - Download and install [Python3.x](https://www.python.org/downloads/) (>=3.5, 64/32 bit) 
 	- [x] Select `Add to PATH` option
 	- [x] Select `Install pip` option
-- Run `pip install art` or `pip3 install art` (Need root access)
+- Run `pip install art`
 - Configure Python interpreter
 ```matlab
 >> pyversion PYTHON_EXECUTABLE_FULL_PATH

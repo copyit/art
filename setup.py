@@ -15,7 +15,7 @@ MINIMAL_DESCRIPTION = '''ASCII art is also known as "computer text art".
 def get_dev_requires():
     """Read dev-requirements.txt."""
     requirements = open("dev-requirements.txt", "r").read()
-    return list(filter(lambda x: x != "", requirements.split()))
+    return [x for x in requirements.split() if x]
 
 
 def read_description():
@@ -34,25 +34,26 @@ def read_description():
 
 setup(
     name='art',
-    packages=['art'],
-    version='5.3',
+    packages=['art', 'art.data', 'art.tests'],
+    version='6.4',
     description='ASCII Art Library For Python',
     long_description=read_description(),
     long_description_content_type='text/markdown',
     author='Sepand Haghighi',
-    author_email='info@4r7.ir',
+    author_email='info@ascii-art.site',
     url='https://github.com/sepandhaghighi/art',
     keywords="ascii art python3 python text font non-ascii printing",
     project_urls={
-        'Webpage': 'https://www.4r7.ir',
+        'Webpage': 'https://www.ascii-art.site',
         'Source': 'https://github.com/sepandhaghighi/art',
         'Tracker': 'https://github.com/sepandhaghighi/art/issues',
+        'Discord': 'https://discord.com/invite/FAAyq3QJqP',
     },
     install_requires=[],
     extras_require={
         "dev": get_dev_requires()
     },
-    python_requires='>=2.7',
+    python_requires='>=3.6',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
@@ -62,13 +63,14 @@ setup(
         'Natural Language :: English',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
         'Topic :: Text Processing :: Fonts',
         'Topic :: Text Editors',
         'Topic :: Text Processing :: General',
@@ -77,5 +79,9 @@ setup(
         'Topic :: Printing',
     ],
     license='MIT',
-    include_package_data=True
+    include_package_data=True,
+    entry_points={
+        'console_scripts': [
+            'art = art.__main__:main',
+        ]}
 )

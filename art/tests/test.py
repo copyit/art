@@ -5,6 +5,39 @@
 >>> import sys
 >>> from art import *
 >>> import string
+>>> lprint(length=10, height=1, char="#")
+##########
+>>> lprint(length=15, height=2, char="*")
+***************
+***************
+>>> lprint(length=0, height=1, char="#")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'length' must be an int higher than 0.
+>>> lprint(length=15, height='test', char="#")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'height' must be an int higher than 0.
+>>> lprint(length=15, height=2, char=4)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'char' type must be str.
+>>> line(length=10, height=1, char="#")
+'##########'
+>>> line(length=15, height=2, char="*")
+'***************\n***************'
+>>> line(length=0, height=1, char="#")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'length' must be an int higher than 0.
+>>> line(length=15, height='test', char="#")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'height' must be an int higher than 0.
+>>> line(length=15, height=2, char=4)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'char' type must be str.
 >>> tprint("\t\t2","block")
 <BLANKLINE>
  .----------------.
@@ -19,9 +52,65 @@
 | '--------------' |
  '----------------'
 <BLANKLINE>
+>>> tprint("\t\t2","block",sep=2)
+<BLANKLINE>
+ .----------------.
+| .--------------. |
+| |    _____     | |
+| |   / ___ `.   | |
+| |  |_/___) |   | |
+| |   .'____.'   | |
+| |  / /____     | |
+| |  |_______|   | |
+| |              | |
+| '--------------' |
+ '----------------'
+<BLANKLINE>
+>>> tprint("\t\t2","block",sep="\n\n")
+<BLANKLINE>
+<BLANKLINE>
+ .----------------.
+<BLANKLINE>
+| .--------------. |
+<BLANKLINE>
+| |    _____     | |
+<BLANKLINE>
+| |   / ___ `.   | |
+<BLANKLINE>
+| |  |_/___) |   | |
+<BLANKLINE>
+| |   .'____.'   | |
+<BLANKLINE>
+| |  / /____     | |
+<BLANKLINE>
+| |  |_______|   | |
+<BLANKLINE>
+| |              | |
+<BLANKLINE>
+| '--------------' |
+<BLANKLINE>
+ '----------------'
+<BLANKLINE>
+<BLANKLINE>
 >>> tprint(" ","block")
 <BLANKLINE>
 >>> tprint("123","alpha")
+<BLANKLINE>
+>>> tprint('HEY')
+ _   _  _____ __   __
+| | | || ____|\ \ / /
+| |_| ||  _|   \ V /
+|  _  || |___   | |
+|_| |_||_____|  |_|
+<BLANKLINE>
+<BLANKLINE>
+>>> tprint('HEY', space=6)
+ _   _        _____       __   __
+| | | |      | ____|      \ \ / /
+| |_| |      |  _|         \ V /
+|  _  |      | |___         | |
+|_| |_|      |_____|        |_|
+<BLANKLINE>
 <BLANKLINE>
 >>> font_list(mode="ascii")
 1943 :
@@ -4358,6 +4447,10 @@ __o000o__(o)(o)__o000o__
 ******************************
 >>> aprint(artname = "awesame")
 <:3 )~~~
+>>> aprint(artname = "awesame", number=2)
+<:3 )~~~ <:3 )~~~
+>>> aprint(artname = "awesame", number=2, space=5)
+<:3 )~~~     <:3 )~~~
 >>> help_func()
               _
   __ _  _ __ | |_
@@ -4366,11 +4459,11 @@ __o000o__(o)(o)__o000o__
  \__,_||_|    \__|
 <BLANKLINE>
 <BLANKLINE>
-        ____      _____
-__   __| ___|    |___ /
-\ \ / /|___ \      |_ \
- \ V /  ___) | _  ___) |
-  \_/  |____/ (_)|____/
+         __       _  _
+__   __ / /_     | || |
+\ \ / /| '_ \    | || |_
+ \ V / | (_) | _ |__   _|
+  \_/   \___/ (_)   |_|
 <BLANKLINE>
 <BLANKLINE>
 ASCII art is also known as "computer text art".
@@ -4378,7 +4471,7 @@ It involves the smart placement of typed special characters or
 letters to make a visual shape that is spread over multiple lines of text.
 ART is a Python lib for text converting to ASCII art fancy.
 <BLANKLINE>
-Webpage : https://www.4r7.ir
+Webpage : https://www.ascii-art.site
 <BLANKLINE>
 Help :
 <BLANKLINE>
@@ -4388,13 +4481,14 @@ Help :
 <BLANKLINE>
      - test --> (run tests)
 <BLANKLINE>
-     - text 'yourtext' 'font(optional)' --> (text art) Example : 'python -m art text exampletext block'
+     - text [yourtext] [font(optional)] --> (text art) Example : 'art text exampletext block'
 <BLANKLINE>
-     - shape 'shapename' --> (shape art) Example : 'python -m art shape butterfly'
+     - shape [shapename] --> (shape art) Example : 'art shape butterfly'
 <BLANKLINE>
-     - save 'yourtext' 'font(optional)'  -->  Example : 'python -m art save exampletext block'
+     - save [yourtext] [font(optional)]  -->  Example : 'art save exampletext block'
 <BLANKLINE>
-     - all 'yourtext'  -->  Example : 'python -m art all exampletext'
+     - all [yourtext]  -->  Example : 'art all exampletext'
+<BLANKLINE>
 >>> tprint('طط')
 <BLANKLINE>
 >>> art1 = "MonSter"
@@ -4405,11 +4499,11 @@ True
 >>> random.seed(3)
 >>> Art = art("random")
 >>> random.seed(40)
->>> Text = text2art("test","random")
+>>> Text = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","random")
 >>> random.seed(55)
 >>> Art3 = randart()
 >>> random.seed(19)
->>> Text2 = text2art("test","random")
+>>> Text2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","random")
 >>> random.seed(39)
 >>> Art2 =  art("random")
 >>> random.seed(119)
@@ -4425,7 +4519,11 @@ Traceback (most recent call last):
         ...
 art.art.artError: Invalid art name.
 >>> art("coffee")
-'c[_] '
+'c[_]'
+>>> art("coffee", number=2)
+'c[_] c[_]'
+>>> art("coffee", number=2, space=5)
+'c[_]     c[_]'
 >>> tprint("test 2")
  _               _     ____
 | |_   ___  ___ | |_  |___ \
@@ -4565,10 +4663,18 @@ art.art.artError: The 'text' type must be str.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'artname' type must be str.
+>>> art("woman",space="22")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'space' type must be int.
 >>> aprint("woman",number="22")
 Traceback (most recent call last):
         ...
 art.art.artError: The 'number' type must be int.
+>>> aprint("woman",space="22")
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'space' type must be int.
 >>> set_default(font="italic")
 >>> tprint("test")
 <BLANKLINE>
@@ -4600,28 +4706,40 @@ art.art.artError: The 'overwrite' type must be bool.
 Traceback (most recent call last):
         ...
 art.art.artError: The 'sep' type must be str.
+>>> set_default(decoration=2)
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'decoration' type must be str.
+>>> set_default(space='test')
+Traceback (most recent call last):
+        ...
+art.art.artError: The 'space' type must be int.
+>>> set_default(__detailed_return='test')
+Traceback (most recent call last):
+        ...
+art.art.artError: The '__detailed_return' type must be bool.
 >>> random.seed(200)
->>> Art = text2art("test","rnd-small")
+>>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-small")
 >>> random.seed(800)
->>> Art2 = text2art("test","rnd-small")
+>>> Art2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-small")
 >>> Art == Art2
 False
 >>> random.seed(200)
->>> Art = text2art("test","rnd-medium")
+>>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-medium")
 >>> random.seed(800)
->>> Art2 = text2art("test","rnd-medium")
+>>> Art2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-medium")
 >>> Art == Art2
 False
 >>> random.seed(200)
->>> Art = text2art("test","rnd-large")
+>>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-large")
 >>> random.seed(800)
->>> Art2 = text2art("test","rnd-large")
+>>> Art2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-large")
 >>> Art == Art2
 False
 >>> random.seed(200)
->>> Art = text2art("test","rnd-xlarge")
+>>> Art = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-xlarge")
 >>> random.seed(800)
->>> Art2 = text2art("test","rnd-xlarge")
+>>> Art2 = text2art("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789","rnd-xlarge")
 >>> Art == Art2
 False
 >>> Art = text2art("te","wizard")
@@ -4648,8 +4766,8 @@ True
 >>> Art6 = text2art(text2,"double")
 >>> text2 == text2_copy
 True
->>> from art.art import font_size_splitter
->>> from art.art_param import FONT_MAP,RANDOM_FILTERED_FONTS
+>>> from art.utils import font_size_splitter
+>>> from art.params import FONT_MAP,RANDOM_FILTERED_FONTS
 >>> font_dicts = font_size_splitter(FONT_MAP)
 >>> len(font_dicts["small_list"])>0
 True
@@ -4661,7 +4779,7 @@ True
 True
 >>> (len(font_dicts["small_list"]) + len(font_dicts["medium_list"]) + len(font_dicts["large_list"]) + len(font_dicts["xlarge_list"])) == (FONT_COUNTER - len(RANDOM_FILTERED_FONTS))
 True
->>> for font in FONT_MAP.keys():
+>>> for font in FONT_MAP:
 ...     for letter in string.ascii_letters + string.punctuation + string.digits + " ":
 ...         Data = text2art(letter,font,chr_ignore=False)
 >>> file = open("art.txt","r")

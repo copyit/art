@@ -2,9 +2,9 @@
 """Art and decors duplication and UTF-8 compatibility testing script."""
 import sys
 import art
-from art.art_param import DECORATIONS_MAP as Decor_Dict
-from art.art_dic import art_dic as Art_Dict
-from art.art_param import NON_ASCII_ARTS
+from art.params import DECORATIONS_MAP as Decor_Dict
+from art.data.arts import art_dic as Art_Dict
+from art.params import NON_ASCII_ARTS
 from font_wizard import is_utf8, is_ascii
 
 Failed1 = 0
@@ -27,7 +27,9 @@ def print_result(flag_list, message_list):
     :type message_list: list
     :return: None
     """
-    print("art version : {}\n".format(art.__version__))
+    print("Art version : {}".format(art.__version__))
+    print("Number of arts : {}".format(art.ART_COUNTER))
+    print("Number of decors : {}".format(art.DECORATION_COUNTER))
     for index, flag in enumerate(flag_list):
         if flag == 0:
             print(message_list[index] + "passed!")
@@ -36,7 +38,7 @@ def print_result(flag_list, message_list):
 
 
 if __name__ == "__main__":
-    Art_Keys = list(Art_Dict.keys())
+    Art_Keys = list(Art_Dict)
     Art_Values = list(Art_Dict.values())
     for art_name in Art_Keys:
         ascii_flag = is_ascii(Art_Dict[art_name])
@@ -53,7 +55,7 @@ if __name__ == "__main__":
             print(
                 "Art type warning : {0} is NON-ASCII but imported as ASCII".format(art_name))
 
-    Decor_Keys = list(Decor_Dict.keys())
+    Decor_Keys = list(Decor_Dict)
     Decor_Values = list(Decor_Dict.values())
     for decor_name in Decor_Keys:
         if not is_utf8(

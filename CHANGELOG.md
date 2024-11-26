@@ -5,6 +5,197 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [6.4] - 2024-11-26
+### Added
+- `line` function
+- `lprint` function
+- 5 new font
+	1. abby
+	2. clay
+	3. neva
+	4. orinda
+	5. smila
+### Changed
+- PyPI badge in `README.md`
+- GitHub actions are limited to the `dev` and `master` branches
+- `Python 3.13` added to `test.yml`
+- `README.md` modified
+## [6.3] - 2024-09-19
+### Added
+- `data` directory
+- `tests` directory
+- 10 new font
+	1. lolie
+	2. zakia
+	3. batman
+	4. lord_of_the_ring
+	5. kesia
+	6. akila
+	7. laurine
+	8. bianca
+	9. callian
+	10. awa
+### Changed
+- `art_param` module changed to `params`
+- `art` module split into `errors`, `utils`, and `functions` modules
+- `text_dic1`, `text_dic2`, and `text_dic3` renamed to `fonts1`, `fonts2`, and `fonts3`
+- `art_dic` renamed to `arts`
+- `decor_dic` renamed to `decorations`
+- Fonts, arts, and decorations moved to `data` directory
+- Tests moved to `tests` directory
+- `Python 3.5` support dropped
+- Test system modified
+- `CONTRIBUTING.md` updated
+- `README.md` modified
+## [6.2] - 2024-04-22
+### Added
+- 5 new font
+	1. alissa
+	2. milka
+	3. ozana
+	4. shanna
+	5. livia
+- `decoration_request.yml` template
+- `font_request.yml` template
+- `one_line_request.yml` template
+- `feature_request.yml` template
+- `config.yml` for issue template
+- `SECURITY.md`
+### Changed
+- Bug report template modified
+- Test system modified
+- `README.md` modified
+- [DigitalOcean](https://digitalocean.com/) logo added to `README.md`
+- `Python 3.12` added to `test.yml`
+## [6.1] - 2023-09-20
+### Changed
+- `font_size_splitter` function modified
+- `__detailed_return` parameter added to `art` function
+- `__detailed_return` parameter added to `text2art` function
+- Random mode name bug fixed
+- `__word2art` function modified
+- `art` function tail space bug fixed
+- `space` parameter bug fixed
+- `space` parameter added to `art` function
+- `space` parameter added to `aprint` function
+- `font_check.py` modified
+- `README.md` modified
+- `INSTALL.md` modified
+## [6.0] - 2023-06-14
+### Added
+- 6 new font
+	1. vaporwave
+	2. squiggle1
+	3. squiggle2
+	4. crazy2
+	5. crazy3
+	6. emoji
+### Changed
+- `font_wizard.py` modified
+- Drop Python 2.7 and 3.4 support
+- `space` parameter added to `tsave` function
+- `space` parameter added to `tprint` function
+- `space` parameter added to `text2art` function
+- `crazy` font renamed to `crazy1`
+- Test system modified
+- `codecov` removed from `dev-requirements.txt`
+- `README.md` modified
+- `INSTALL.md` modified
+## [5.9] - 2023-03-16
+### Added
+- 6 new font
+	1. small_fancy
+	2. boom
+	3. cross_jesus
+	4. dark_tattoo
+	5. lucifer
+	6. ascii_roman
+### Changed
+- Test system modified
+- `README.md` modified
+- `help_func` function modified
+- CLI mode updated
+## [5.8] - 2022-11-23
+### Added
+- 8 new font
+	1. russian2
+	2. got
+	3. vip
+	4. crazy
+	5. cruse
+	6. drippy
+	7. stylish
+	8. ayda
+### Changed
+- Test system modified
+- `Python 3.11` added to `test.yml`
+- `Conda-Forge` installing section added to `INSTALL.md`
+- Website changed to https://www.ascii-art.site
+### Removed
+- `testcov` and `testcov2` modes
+## [5.7] - 2022-07-06
+### Added
+- 5 new font
+	1. fancy144
+	2. fancy145
+	3. fancy146
+	4. fancy147
+	5. fancy148
+- `ASCII_FONTS` list
+- `ASCII_ARTS` list
+## [5.6] - 2022-04-20
+### Added
+- 7 new font
+	1. fancy141
+	2. fancy142
+	3. fancy143
+	4. tarty6
+	5. tarty7
+	6. tarty8
+	7. tarty9
+### Changed
+- Test system modified
+## [5.5] - 2022-03-02
+### Added
+- 5 new font
+	1. tarty4
+	2. tarty5
+	3. fancy138
+	4. fancy139
+	5. fancy140
+- Anaconda workflow
+### Changed
+- `__word2art` function modified
+- `font_wizard.py` modified
+## [5.4] - 2021-12-22
+### Added
+- 10 new font
+	1. fancy131
+	2. fancy132
+	3. fancy133
+	4. fancy134
+	5. fancy135
+	6. fancy136
+	7. fancy137
+	8. tarty1
+	9. tarty2
+	10. tarty3
+- Discord badge
+### Changed
+- Some fonts width bug fixed
+- `test.py` modified
+- `font_wizard.py` modified
+- `font_check.py` modified
+- `art_decor_check.py` modified
+- `__word2art` function modified
+- `mix_letters` function modified
+- `AUTHORS.md` updated
+- License updated
+- `README.md` modified
+- `CONTRIBUTING.md` modified
+- `Python 3.10` added to `test.yml`
+### Removed
+- `greetings.yml`
 ## [5.3] - 2021-08-30
 ### Added
 - 10 new font
@@ -22,6 +213,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `fantasy` font renamed to `fantasy1`
 - `upside_down` font renamed to `upside_down1`
 - `sep` parameter added to `text2art`, `tprint`, `tsave` and `set_default` functions
+- Default line separator changed from `\r\n` to `\n`
 - `__word2art` function modified
 - Escaped `\ ` in string literals
 ## [5.2] - 2021-05-05
@@ -1954,7 +2146,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 1-Line art
 - CLI commands
 
-[Unreleased]: https://github.com/sepandhaghighi/art/compare/v5.3...dev
+[Unreleased]: https://github.com/sepandhaghighi/art/compare/v6.4...dev
+[6.4]: https://github.com/sepandhaghighi/art/compare/v6.3...v6.4
+[6.3]: https://github.com/sepandhaghighi/art/compare/v6.2...v6.3
+[6.2]: https://github.com/sepandhaghighi/art/compare/v6.1...v6.2
+[6.1]: https://github.com/sepandhaghighi/art/compare/v6.0...v6.1
+[6.0]: https://github.com/sepandhaghighi/art/compare/v5.9...v6.0
+[5.9]: https://github.com/sepandhaghighi/art/compare/v5.8...v5.9
+[5.8]: https://github.com/sepandhaghighi/art/compare/v5.7...v5.8
+[5.7]: https://github.com/sepandhaghighi/art/compare/v5.6...v5.7
+[5.6]: https://github.com/sepandhaghighi/art/compare/v5.5...v5.6
+[5.5]: https://github.com/sepandhaghighi/art/compare/v5.4...v5.5
+[5.4]: https://github.com/sepandhaghighi/art/compare/v5.3...v5.4
 [5.3]: https://github.com/sepandhaghighi/art/compare/v5.2...v5.3
 [5.2]: https://github.com/sepandhaghighi/art/compare/v5.1...v5.2
 [5.1]: https://github.com/sepandhaghighi/art/compare/v5.0...v5.1
