@@ -4,17 +4,41 @@
 >>> import random
 >>> from art import *
 >>> font_list(mode="non-ascii")
+abby :
+ТΞꚂТ
+<BLANKLINE>
+akila :
+ŦЄ$Ŧ
+<BLANKLINE>
+alissa :
+ꞎᥱടꞎ
+<BLANKLINE>
 antrophobia :
 тєѕт
 <BLANKLINE>
+ascii_roman :
+τεsτ
+<BLANKLINE>
 atlantic :
 ϯεςϯ
+<BLANKLINE>
+awa :
+тєѕт
 <BLANKLINE>
 awcute :
 téśt
 <BLANKLINE>
 awesome :
 тεƨт
+<BLANKLINE>
+ayda :
+Ť∈ᏕŤ
+<BLANKLINE>
+batman :
+էεรէ
+<BLANKLINE>
+bianca :
+եɛsե
 <BLANKLINE>
 black_bubble :
 🅣🅔🅢🅣
@@ -28,11 +52,17 @@ bold_fraktur :
 bold_script :
 𝓽𝓮𝓼𝓽
 <BLANKLINE>
+boom :
+✞ɛֆ✞
+<BLANKLINE>
 bud1 :
 tོeོsོtོ
 <BLANKLINE>
 bud2 :
 tཽeཽsཽtཽ
+<BLANKLINE>
+callian :
+ŧɇsŧ
 <BLANKLINE>
 carrier1 :
 TᕮST
@@ -48,6 +78,9 @@ chinese_mafia :
 <BLANKLINE>
 cjk :
 イモらイ
+<BLANKLINE>
+clay :
+Ł୧ꚂŁ
 <BLANKLINE>
 contouring1 :
 ⓣⓔⓢⓣ
@@ -73,6 +106,21 @@ coptic2 :
 cranky :
 †εš†
 <BLANKLINE>
+crazy1 :
+ɬєʂɬ
+<BLANKLINE>
+crazy2 :
+☂€ⓢ☂
+<BLANKLINE>
+crazy3 :
+Ƭ៩នƬ
+<BLANKLINE>
+cross_jesus :
+†ҽŞ†
+<BLANKLINE>
+cruse :
+ᖶᘿSᖶ
+<BLANKLINE>
 curly :
 էҽʂէ
 <BLANKLINE>
@@ -88,6 +136,9 @@ cute2 :
 cute3 :
 եҽsե
 <BLANKLINE>
+dark_tattoo :
+𝔱𝔢𝔰𝔱
+<BLANKLINE>
 dirty :
 ẗệṩẗ
 <BLANKLINE>
@@ -100,8 +151,14 @@ dotted :
 drako :
 ϮꂅᏕϮ
 <BLANKLINE>
+drippy :
+ȶᵉˢȶ
+<BLANKLINE>
 dwarf :
 ᵗᵉˢᵗ
+<BLANKLINE>
+emoji :
+🌴🎗💲🌴
 <BLANKLINE>
 fancy1 :
 тεsт
@@ -211,8 +268,62 @@ tєรt
 fancy130 :
 𐨠𐌴Ⲋ𐨠
 <BLANKLINE>
+fancy131 :
+ᵗᵉˢᵗ
+<BLANKLINE>
+fancy132 :
+𝕥𝕖𝕤𝕥
+<BLANKLINE>
+fancy133 :
+𝙩𝙚𝙨𝙩
+<BLANKLINE>
+fancy134 :
+𝒕𝒆𝒔𝒕
+<BLANKLINE>
+fancy135 :
+𝐭𝐞𝐬𝐭
+<BLANKLINE>
+fancy136 :
+𝘁𝗲𝘀𝘁
+<BLANKLINE>
+fancy137 :
+𝖙𝖊𝖘𝖙
+<BLANKLINE>
+fancy138 :
+𝓉ℯ𝓈𝓉
+<BLANKLINE>
+fancy139 :
+𝓽𝓮𝓼𝓽
+<BLANKLINE>
 fancy14 :
 ȶɛֆȶ
+<BLANKLINE>
+fancy140 :
+ⲧⲉ𝛓ⲧ
+<BLANKLINE>
+fancy141 :
+ｔｅｓｔ
+<BLANKLINE>
+fancy142 :
+🅃🄴🅂🅃
+<BLANKLINE>
+fancy143 :
+🆃🅴🆂🆃
+<BLANKLINE>
+fancy144 :
+🅣🅔🅢🅣
+<BLANKLINE>
+fancy145 :
+ⓣⓔⓢⓣ
+<BLANKLINE>
+fancy146 :
+セ🝗丂セ
+<BLANKLINE>
+fancy147 :
+ƚҽʂƚ
+<BLANKLINE>
+fancy148 :
+𝚝ₑ𝘴𝚝
 <BLANKLINE>
 fancy15 :
 ✞ƎƧ✞
@@ -520,6 +631,9 @@ full_width :
 funky_fresh :
 тḙṧт
 <BLANKLINE>
+got :
+ＴＥＳＴ
+<BLANKLINE>
 greek_legends :
 TΣST
 <BLANKLINE>
@@ -535,11 +649,17 @@ handwriting3 :
 hazy :
 ŤƐらŤ
 <BLANKLINE>
+hideki :
+丁乇丂丁
+<BLANKLINE>
 high_above :
 ᵗᵉˢᵗ
 <BLANKLINE>
 hippie :
 ⊥ε﹩⊥
+<BLANKLINE>
+hisoka :
+ｲ乇らｲ
 <BLANKLINE>
 hyves :
 t€$t
@@ -547,23 +667,41 @@ t€$t
 instagram :
 🅣🅔🅢🅣
 <BLANKLINE>
+kesia :
+TΣST
+<BLANKLINE>
 knight :
 ṮḕṠṮ
 <BLANKLINE>
 knight2 :
 ṮḕṠṮ
 <BLANKLINE>
+laurine :
+ŤƐらŤ
+<BLANKLINE>
 lilia :
 test
 <BLANKLINE>
+livia :
+եᥱsե
+<BLANKLINE>
+lolie :
+тєѕт
+<BLANKLINE>
 lopioo :
 ȶɛֆȶ
+<BLANKLINE>
+lord_of_the_ring :
+тєѕт
 <BLANKLINE>
 love1 :
 ƬƐSƬ
 <BLANKLINE>
 love2 :
 тєsт
+<BLANKLINE>
+lucifer :
+ᏆᎬsᏆ
 <BLANKLINE>
 malayalam :
 ੮૯ട੮
@@ -573,6 +711,9 @@ manga :
 <BLANKLINE>
 messletters :
 ᴛєѕᴛ
+<BLANKLINE>
+milka :
+ƭҽʂƭ
 <BLANKLINE>
 minion :
 ᴛᴇsᴛ
@@ -589,11 +730,20 @@ monospace :
 native_lands :
 ƬꍟꌗƬ
 <BLANKLINE>
+neva :
+੮૯ട੮
+<BLANKLINE>
 ninja :
 ⱦēꞩⱦ
 <BLANKLINE>
 old_italic :
 𐌕𐌄𐌔𐌕
+<BLANKLINE>
+orinda :
+ꞎ𝚎𐒖ꞎ
+<BLANKLINE>
+ozana :
+𝙩𝒆𝙨𝙩
 <BLANKLINE>
 paranormal :
 tєst
@@ -613,11 +763,20 @@ rusify :
 russian :
 TΞST
 <BLANKLINE>
+russian2 :
+ƬƎƧƬ
+<BLANKLINE>
+samya :
+ꞎ୧𐒖ꞎ
+<BLANKLINE>
 sarah :
 ᏆℰЅᏆ
 <BLANKLINE>
 scammer :
 těst
+<BLANKLINE>
+shanna :
+ṬЄꕷṬ
 <BLANKLINE>
 shasha :
 †€∫†
@@ -631,11 +790,17 @@ t⃠e⃠s⃠t⃠
 slammer :
 ƮęsƮ
 <BLANKLINE>
+small_fancy :
+ₜₑₛₜ
+<BLANKLINE>
 smallcaps2 :
 ᴛᴇsᴛ
 <BLANKLINE>
 smallcaps3 :
 ᴛᴇsᴛ
+<BLANKLINE>
+smila :
+𝑡୧𐍃𝑡
 <BLANKLINE>
 smooth1 :
 тєѕт
@@ -649,11 +814,20 @@ smooth3 :
 special :
 TEᔕT
 <BLANKLINE>
+squiggle1 :
+ԵҽsԵ
+<BLANKLINE>
+squiggle2 :
+ԵeՏԵ
+<BLANKLINE>
 strange :
 τεȘτ
 <BLANKLINE>
 strikethrough :
 ŧɇsŧ
+<BLANKLINE>
+stylish :
+ȶєᏕȶ
 <BLANKLINE>
 subscript1 :
 ₜₑₛₜ
@@ -663,6 +837,9 @@ subscript2 :
 <BLANKLINE>
 sunday_cuddle :
 тєѕт
+<BLANKLINE>
+sunny :
+тḙṧт
 <BLANKLINE>
 superscript :
 ᵗᵉˢᵗ
@@ -675,6 +852,82 @@ symbols :
 <BLANKLINE>
 tai_viet :
 ꪻꫀᦓꪻ
+<BLANKLINE>
+tarty1 :
+<BLANKLINE>
+████████╗███████╗░██████╗████████╗
+╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝
+░░░██║░░░█████╗░░╚█████╗░░░░██║░░░
+░░░██║░░░██╔══╝░░░╚═══██╗░░░██║░░░
+░░░██║░░░███████╗██████╔╝░░░██║░░░
+░░░╚═╝░░░╚══════╝╚═════╝░░░░╚═╝░░░
+<BLANKLINE>
+tarty2 :
+<BLANKLINE>
+▀█▀ █▀▀ █▀ ▀█▀
+░█░ ██▄ ▄█ ░█░
+<BLANKLINE>
+<BLANKLINE>
+tarty3 :
+<BLANKLINE>
+▀▀█▀▀ █▀▀ █▀▀ ▀▀█▀▀
+──█── █▀▀ ▀▀█ ──█──
+──▀── ▀▀▀ ▀▀▀ ──▀──
+<BLANKLINE>
+tarty4 :
+<BLANKLINE>
+▀▀█▀▀ █▀▀ █▀▀ ▀▀█▀▀
+░░█░░ █▀▀ ▀▀█ ░░█░░
+░░▀░░ ▀▀▀ ▀▀▀ ░░▀░░
+<BLANKLINE>
+tarty5 :
+<BLANKLINE>
+▜▛ █☰ ▟▛ ▜▛ 
+<BLANKLINE>
+tarty6 :
+<BLANKLINE>
+█─▄─▄─██▄─▄▄─██─▄▄▄▄██─▄─▄─█
+███─█████─▄█▀██▄▄▄▄─████─███
+▀▀▄▄▄▀▀▀▄▄▄▄▄▀▀▄▄▄▄▄▀▀▀▄▄▄▀▀
+<BLANKLINE>
+tarty7 :
+<BLANKLINE>
+████████████████████████████
+█─▄─▄─██▄─▄▄─██─▄▄▄▄██─▄─▄─█
+███─█████─▄█▀██▄▄▄▄─████─███
+▀▀▄▄▄▀▀▀▄▄▄▄▄▀▀▄▄▄▄▄▀▀▀▄▄▄▀▀
+<BLANKLINE>
+tarty8 :
+<BLANKLINE>
+────────────────────────────────────────────────────────────────
+─██████████████──██████████████──██████████████──██████████████─
+─██░░░░░░░░░░██──██░░░░░░░░░░██──██░░░░░░░░░░██──██░░░░░░░░░░██─
+─██████░░██████──██░░██████████──██░░██████████──██████░░██████─
+─────██░░██──────██░░██──────────██░░██──────────────██░░██─────
+─────██░░██──────██░░██████████──██░░██████████──────██░░██─────
+─────██░░██──────██░░░░░░░░░░██──██░░░░░░░░░░██──────██░░██─────
+─────██░░██──────██░░██████████──██████████░░██──────██░░██─────
+─────██░░██──────██░░██──────────────────██░░██──────██░░██─────
+─────██░░██──────██░░██████████──██████████░░██──────██░░██─────
+─────██░░██──────██░░░░░░░░░░██──██░░░░░░░░░░██──────██░░██─────
+─────██████──────██████████████──██████████████──────██████─────
+────────────────────────────────────────────────────────────────
+<BLANKLINE>
+tarty9 :
+<BLANKLINE>
+████████████████████████████████████████████████████████████████
+█░░░░░░░░░░░░░░██░░░░░░░░░░░░░░██░░░░░░░░░░░░░░██░░░░░░░░░░░░░░█
+█░░▄▀▄▀▄▀▄▀▄▀░░██░░▄▀▄▀▄▀▄▀▄▀░░██░░▄▀▄▀▄▀▄▀▄▀░░██░░▄▀▄▀▄▀▄▀▄▀░░█
+█░░░░░░▄▀░░░░░░██░░▄▀░░░░░░░░░░██░░▄▀░░░░░░░░░░██░░░░░░▄▀░░░░░░█
+█████░░▄▀░░██████░░▄▀░░██████████░░▄▀░░██████████████░░▄▀░░█████
+█████░░▄▀░░██████░░▄▀░░░░░░░░░░██░░▄▀░░░░░░░░░░██████░░▄▀░░█████
+█████░░▄▀░░██████░░▄▀▄▀▄▀▄▀▄▀░░██░░▄▀▄▀▄▀▄▀▄▀░░██████░░▄▀░░█████
+█████░░▄▀░░██████░░▄▀░░░░░░░░░░██░░░░░░░░░░▄▀░░██████░░▄▀░░█████
+█████░░▄▀░░██████░░▄▀░░██████████████████░░▄▀░░██████░░▄▀░░█████
+█████░░▄▀░░██████░░▄▀░░░░░░░░░░██░░░░░░░░░░▄▀░░██████░░▄▀░░█████
+█████░░▄▀░░██████░░▄▀▄▀▄▀▄▀▄▀░░██░░▄▀▄▀▄▀▄▀▄▀░░██████░░▄▀░░█████
+█████░░░░░░██████░░░░░░░░░░░░░░██░░░░░░░░░░░░░░██████░░░░░░█████
+████████████████████████████████████████████████████████████████
 <BLANKLINE>
 thin2 :
 ｔｅｓｔ
@@ -697,6 +950,15 @@ upside_down1 :
 upside_down2 :
 ʇǝsʇ
 <BLANKLINE>
+vaporwave :
+ｔｅｓｔ
+<BLANKLINE>
+veronika :
+TᏋꚂT
+<BLANKLINE>
+vip :
+ƬΣƧƬ
+<BLANKLINE>
 white_bubble :
 ⓣⓔⓢⓣ
 <BLANKLINE>
@@ -705,6 +967,9 @@ white_square :
 <BLANKLINE>
 wiggly :
 ⊥ÈS⊥
+<BLANKLINE>
+zakia :
+Ꚍ୧ઽꚌ
 <BLANKLINE>
 >>> art_list(mode="non-ascii")
 3
@@ -850,6 +1115,9 @@ boombox1
 ******************************
 boombox2
 ♫♪ |̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅| ♫♪
+******************************
+bored
+╭∩╮<-L->╭∩╮
 ******************************
 boxing
 ლ(•́•́ლ)
@@ -2870,9 +3138,11 @@ False
 тεsт
 <BLANKLINE>
 >>> aprint("UnicodeEncodeError")
-[Warning] 'UnicodeEncodeError' is not printable in this environment.
+[Warning] 'UnicodeEncodeError' art is not printable in this environment.
 >>> tprint("test","UnicodeEncodeError")
-[Warning] 'UnicodeEncodeError' is not printable in this environment.
+[Warning] 'UnicodeEncodeError' font is not printable in this environment.
+>>> tprint("test","UnicodeEncodeError",decoration="angry1")
+[Warning] 'UnicodeEncodeError' font or 'angry1' decoration is not printable in this environment.
 >>> Data = tsave("test@34",font="antrophobia",filename="antrophobia.txt")
 Saved!
 Filename: antrophobia.txt
@@ -2892,6 +3162,10 @@ Filename: fancy6dec.txt
 >>> Data["Message"]
 'OK'
 >>> Data["Status"]
+True
+>>> FONT_COUNTER == (len(ASCII_FONTS) + len(NON_ASCII_FONTS))
+True
+>>> ART_COUNTER == (len(ASCII_ARTS) + len(NON_ASCII_ARTS))
 True
 >>> os.remove("antrophobia.txt")
 >>> os.remove("fancy37.txt")
