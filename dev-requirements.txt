@@ -1,6 +1,6 @@
 coverage>=4.1
 codecov>=2.0.15
 vulture>=1.0
-bandit>=1.5.1
+bandit>=1.8.6
 pydocstyle>=3.0.0
 
